@@ -6,7 +6,7 @@
 1. [Understanding](#understanding)
 2. [Planning](#planning)
 3. [Divide and Conquer](#dividing-problem-in-subform)
-4. Pseudocode
+4. [Pseudocode](#pseudocode)
 
 ### 1. Understanding:
 Here's a more detailed breakdown:
@@ -35,4 +35,9 @@ Here's a more detailed breakdown:
 - [  ] Declare the players score variables
 - [  ] Write the logic to play a single round
 - [  ] Write the logic to play the entire game
+
+## Pseudocode:
+- Make some idea for solve each subform problem, Use pen-paper.
+- Write algorithm to step by step solve the problem.
+- Pseudocode write in actual code, With the help of comment in code.
 
