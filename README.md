@@ -40,7 +40,7 @@ Here's a more detailed breakdown:
 - When All Subform problem solve then implement big problem via join subform and check output is correct
 
 ## Dividing Problem in Subform:
-- [  ] Write the logic to get the computer choice
+- [ ✔ ] Write the logic to get the computer choice
 - [  ] Write the logic to get the human choice
 - [  ] Declare the players score variables
 - [  ] Write the logic to play a single round
