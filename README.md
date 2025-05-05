@@ -1,5 +1,14 @@
 # Rock_Paper_Scissor
-#### Problem: *Rock, paper, scissor* is a two-player hand game where each player simultaneously forms one of three shapes: rock (closed fist), paper (flat hand), or scissors (two fingers extended). The winner is determined by the rules: rock beats scissors, scissors beats paper, and paper beats rock.**
+
+- [📈Progress Check](#dividing-problem-in-subform) 
+>The Odin Project: Foundation Curriculum
+>>Project:Rock Paper Scissor
+>>> Start Date: May 4, 2025
+>>>> End Date: 
+
+#### Problem:
+***Rock, paper, scissor* is a two-player hand game where each player simultaneously forms one of three shapes: rock (closed fist), paper (flat hand), or scissors (two fingers extended). The winner is determined by the rules: rock beats scissors, scissors beats paper, and paper beats rock.**
+
 
 
 ## Problem Solving Process:
@@ -7,6 +16,7 @@
 2. [Planning](#planning)
 3. [Divide and Conquer](#dividing-problem-in-subform)
 4. [Pseudocode](#pseudocode)
+
 
 ### 1. Understanding:
 Here's a more detailed breakdown:
@@ -40,4 +50,3 @@ Here's a more detailed breakdown:
 - Make some idea for solve each subform problem, Use pen-paper.
 - Write algorithm to step by step solve the problem.
 - Pseudocode write in actual code, With the help of comment in code.
-
