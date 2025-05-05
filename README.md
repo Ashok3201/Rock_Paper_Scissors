@@ -4,7 +4,7 @@
 
 ## Problem Solving Process:
 1. [Understanding](#understanding)
-2. Planning
+2. [Planning](#planning)
 3. Pseudocode
 4. Divide and Conquer
 
@@ -18,3 +18,14 @@ Here's a more detailed breakdown:
     - Paper vs. Rock: Paper covers rock, so paper wins.
     - Ties: If both players choose the same move, it's a tie, and they play again.
 - **Playing the Game:** The game can be played in a best-of-three or best-of-five rounds format, with the player who wins the most rounds declared the winner.
+
+## Planning:
+- GUI = NO [Now, No need to implement Graphical User Interface]
+- CLI = YES [only work in console]
+- First Create Subforms of Big Problem.
+- Plan each subform at a time, use Pen and paper write basic idea for start implement in actual code.
+- Then write Pseudocode Code With actual code.
+- Use Functions and if-else conditional statement
+- Solve each subform problem and check output is correct.
+- When All Subform problem solve then implement big problem via join subform and check output is correct
+
