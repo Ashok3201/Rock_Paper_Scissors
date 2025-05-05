@@ -50,3 +50,10 @@ const humanSelection = getHumanChoice();
 //console.log() check output is correct via developer console
 console.log(humanSelection);//check
 
+
+//Declare the players score variables
+
+//declare humanScore var assign initial value 0
+let humanScore = 0;
+//declare computerScore var assign initial value 0
+let computerScore = 0;
