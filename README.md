@@ -5,8 +5,8 @@
 ## Problem Solving Process:
 1. [Understanding](#understanding)
 2. [Planning](#planning)
-3. Pseudocode
-4. Divide and Conquer
+3. [Divide and Conquer](#dividing-problem-in-subform)
+4. Pseudocode
 
 ### 1. Understanding:
 Here's a more detailed breakdown:
@@ -28,4 +28,11 @@ Here's a more detailed breakdown:
 - Use Functions and if-else conditional statement
 - Solve each subform problem and check output is correct.
 - When All Subform problem solve then implement big problem via join subform and check output is correct
+
+## Dividing Problem in Subform:
+- [  ] Write the logic to get the computer choice
+- [  ] Write the logic to get the human choice
+- [  ] Declare the players score variables
+- [  ] Write the logic to play a single round
+- [  ] Write the logic to play the entire game
 
