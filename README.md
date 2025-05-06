@@ -4,7 +4,7 @@
 >The Odin Project: Foundation Curriculum
 >>Project:Rock Paper Scissor
 >>> Start Date: May 4, 2025
->>>> End Date: 
+>>>> End Date: May 7, 2025
 
 #### Problem:
 ***Rock, paper, scissor* is a two-player hand game where each player simultaneously forms one of three shapes: rock (closed fist), paper (flat hand), or scissors (two fingers extended). The winner is determined by the rules: rock beats scissors, scissors beats paper, and paper beats rock.**
