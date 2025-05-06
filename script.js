@@ -19,18 +19,14 @@ function getComputerChoice() {
         return "Scissor";
     }
 }
-//call getComputerChoice(), return string store in a computerSelection var
-const computerSelection = getComputerChoice();
-//console.log() check output is correct via developer console
-console.log(computerSelection);//check
 
 
 //Write the logic to get the human choice
 
 //start function, assign name getHumanChoice(with parameter name string)
-function getHumanChoice() {
-    //declure var human= pop a window for Enter choice in these Rock, Paper, Scissor. With the help of propt().
-    let human = prompt("Type any one you choose in these below word \n Rock, Paper, Scissor\n R, P, S\n r, p, s");
+function getHumanChoice(round) {
+    //declare var human= pop a window for Enter choice in these Rock, Paper, Scissor. With the help of propt().
+    let human = prompt(round + "\nType any one you choose in these below word\n\n Rock, Paper, Scissor\n R, P, S\n r, p, s");
     //if human=="Rock" return "Rock", ensure with other variations such as "rock","ROCK","r"and "R" with the help of || (or) operator
     if (human == "Rock" || human == "rock" || human == "ROCK" || human == "R" || human == "r") {
         return "Rock";
@@ -45,10 +41,6 @@ function getHumanChoice() {
     }
 
 }
-//call getHumanChoice(), store in a humanSelection var
-const humanSelection = getHumanChoice();
-//console.log() check output is correct via developer console
-console.log(humanSelection);//check
 
 
 //Declare the players score variables
@@ -92,7 +84,7 @@ function playRound(humanChoice, computerChoice) {
         // print console.log("You Win! Scissor beats Paper"); 
         console.log("You Win! Scissor beats Paper");
         // return "humanScore"
-    return "humanScore";
+        return "humanScore";
     }
     //else if (humanChoice == "Scissor" &&(and) computerChoice == "Rock")
     else if (humanChoice == "Scissor" && computerChoice == "Rock") {
@@ -108,17 +100,63 @@ function playRound(humanChoice, computerChoice) {
         // return "humanScore"
         return "humanScore";
     }
+    //else if for tie
+    else if (humanChoice == computerChoice) {
+        console.log("Tie: Both Choose same");
+        return 0;
+    }
+    //display massage when user enter Invalid or Empty massage
+    else {
+        console.log("Invalid or Empty Response");
+        return 0;
+    }
 }
-//call playRound(with argu humanSelection, computerSelection), store in a roundWinner var
-let roundWinner = playRound(humanSelection, computerSelection);
 
-//Increment the humanScore or computerScore variable based on the round winner.
-if (roundWinner == "computerScore") {
-    computerScore += 1;
+
+//Write the logic to play the entire game
+
+//Create a new function named playGame
+function playGame(round) {
+    //know the round for console user
+    console.log("\n" + round)
+
+    //call getHumanChoice(), store in a humanSelection var
+    const humanSelection = getHumanChoice(round);
+
+    //call getComputerChoice(), return string store in a computerSelection var
+    const computerSelection = getComputerChoice();
+
+    //console.log() check output is correct via developer console
+    console.log("You Choose:" + humanSelection + "\nComputer Choose:" + computerSelection);//for console user
+
+    //call playRound(with argu humanSelection, computerSelection), store in a roundWinner var
+    let roundWinner = playRound(humanSelection, computerSelection);
+
+    //Increment the humanScore or computerScore variable based on the round winner.
+    if (roundWinner == "computerScore") {
+        computerScore += 1;
+    }
+    else if (roundWinner == "humanScore") {
+        humanScore += 1;
+    }
+    //console.log() check output is correct via developer console
+    console.log("Track score:\n" + "You score:" + humanScore + "\n" + "Computer score:" + computerScore);//console user
+    alert(round + "\n\nChoice Board:\n" + "You Choose: " + humanSelection + "\n" + "Computer Choose: " + computerSelection + "\n\nTrack Score Board:\nYou score:" + humanScore + "\n" + "Computer score:" + computerScore);//for play using alert massage
+}
+//call multiple times,for 3 or 4 round 
+playGame("1st Round")
+playGame("2nd Round")
+playGame("3rd Round")
+//Declare Winner using conditional statements,Who is Match Winner or Match tie
+if (humanScore > computerScore) {
+    console.log("\nFinal Score Board:\n" + "You score: " + humanScore + "\nComputer score: " + computerScore + "\n\nMatch Winner: YOU");//for console user
+    alert("Match Winner: YOU\n" + "\nFinal Score Board:\n" + "You score: " + humanScore + "\nComputer score: " + computerScore);//for play game using alert massage
+}
+else if (humanScore < computerScore) {
+    console.log("\nFinal Score Board:\n" + "You score: " + humanScore + "\nComputer score: " + computerScore + "\n\nMatch Winner: COMPUTER");//for console user
+    alert("Match Winner: COMPUTER\n" + "\nFinal Score Board:\n" + "You score: " + humanScore + "\nComputer score: " + computerScore);//for play game using alert massage
 }
 else {
-    humanScore += 1;
+    console.log("\nFinal Score Board:\n" + "You score: " + humanScore + "\nComputer score: " + computerScore + "\n\nOoops..\nTie: Both score same");//for console user
+    alert("\nTie: Both score same\n" + "\nFinal Score Board:\n" + "You score: " + humanScore + "\nComputer score: " + computerScore);//for play game using alert massage
 }
-//console.log() check output is correct via developer console
-console.log("You score:" + humanScore +" "+ "Computer score:" + computerScore);//check
-
