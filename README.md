@@ -44,7 +44,7 @@ Here's a more detailed breakdown:
 - [ ✔ ] Write the logic to get the human choice
 - [ ✔ ] Declare the players score variables
 - [ ✔ ] Write the logic to play a single round
-- [  ] Write the logic to play the entire game
+- [ ✔ ] Write the logic to play the entire game
 
 ## Pseudocode:
 - Make some idea for solve each subform problem, Use pen-paper.
